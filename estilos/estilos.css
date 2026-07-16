@@ -1,3 +1,4 @@
+/*Resetar CSS do meu projeto*/
 :root {
     --largura-imagem: 150px;
     --cor-borda: black;
@@ -20,18 +21,17 @@ body {
 }
 
 nav {
-    background-color: darkblue;
-    padding: 10px;
+    background-color: darkgoldenrod;
 }
 
 nav a {
     color: white;
     display: block;
-    padding: 20px;
+    padding: 10px;
 }
 
 h1 {
-    color: darkblue;
+    color: darkgoldenrod;
 }
 
 img {
@@ -51,21 +51,21 @@ main {
 }
 
 main img {
+    margin-left: 20px;
+    margin-bottom: 20px;
     width: var(--largura-imagem);
     height: auto;
     border: 1px solid var(--cor-borda);
     padding: 2px;
     box-shadow: 0 0 30px var(--cor-sombra);
+    float: right;
 }
 
 aside {
     width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 1rem;
-    background-color: #eee;
     color: #333;
     text-align: center;
+    position: relative;
 }
 
 aside img {
@@ -73,8 +73,27 @@ aside img {
     height: auto;
 }
 
+aside h2 {
+    position: absolute;
+    top: 50px;
+    left: 120px;
+}
+
 footer {
     margin-top: 30px;
     border-top: 1px solid var(--cor-borda);
     text-align: center;
+}
+
+/*Seletores de Classe*/
+
+.caixa {
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
+    background-color: #eee;
+}
+
+.indentacao {
+    padding-left: 2rem;
 }
