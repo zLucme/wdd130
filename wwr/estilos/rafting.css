@@ -95,3 +95,7 @@ h1 {
     float: right;
     width: 125px;
 }
+
+main {
+    background-color: var(--cor-secundaria);
+}
