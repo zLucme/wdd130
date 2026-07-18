@@ -27,7 +27,6 @@ footer {
     margin: 0 auto;
 }
 
-/* Cabeçalho e Navegação */
 header {
     background-color: var(--cor-primaria);
     color: var(--cor-destaque2);
@@ -47,7 +46,6 @@ header nav ul {
     gap: 20px;
 }
 
-/* Tipografia */
 h1,
 h2 {
     font-family: var(--fonte-titulo);
@@ -56,7 +54,6 @@ h2 {
     margin: 16px;
 }
 
-/* Hero e Sobreposição */
 .hero {
     position: relative;
     text-align: center;
@@ -92,7 +89,6 @@ h2 {
     width: 125px;
 }
 
-/* Rodapé */
 footer {
     background-color: var(--cor-destaque2);
     text-align: center;
