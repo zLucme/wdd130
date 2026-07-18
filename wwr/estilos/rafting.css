@@ -45,8 +45,29 @@ article {
     padding: 8px;
 }
 
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+article {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+article img {
+    width: 200px;
+    float: none;
+}
+
 .redes-sociais a {
     text-decoration: none;
+    width: 40px;
+    height: auto;
+    margin: 0 10px;
 }
 
 .hero {
