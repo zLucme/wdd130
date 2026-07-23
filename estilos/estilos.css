@@ -21,17 +21,26 @@ body {
 }
 
 nav {
+    display: flex;
     background-color: darkgoldenrod;
+    padding: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
-    color: white;
     display: block;
-    padding: 10px;
+    color: white;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
 h1 {
     color: darkgoldenrod;
+    border-bottom: 2px solid darkgoldenrod;
+    padding-bottom: 10px;
 }
 
 img {
@@ -47,7 +56,8 @@ p {
 }
 
 main {
-    max-width: 840px;
+    grid-column: 2/3;
+    margin: 1rem;
 }
 
 main img {
@@ -66,6 +76,8 @@ aside {
     color: #333;
     text-align: center;
     position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 aside img {
@@ -96,4 +108,15 @@ footer {
 
 .indentacao {
     padding-left: 2rem;
+}
+
+header,
+footer {
+    max-width: 840px;
+    margin: auto;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
 }
