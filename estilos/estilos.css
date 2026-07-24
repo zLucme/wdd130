@@ -51,7 +51,6 @@ nav a:hover {
     background-color: rgba(0, 0, 0, 0.15);
 }
 
-/* Títulos */
 h1 {
     color: var(--cor-primaria);
     border-bottom: 2px solid var(--cor-primaria);
