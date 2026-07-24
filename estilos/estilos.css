@@ -1,8 +1,8 @@
-/*Resetar CSS do meu projeto*/
 :root {
     --largura-imagem: 150px;
-    --cor-borda: black;
-    --cor-sombra: gray;
+    --cor-borda: #ccc;
+    --cor-sombra: rgba(0, 0, 0, 0.15);
+    --cor-primaria: darkgoldenrod;
 }
 
 * {
@@ -12,111 +12,130 @@
 }
 
 body {
-    font-size: 15px;
+    font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.5;
-    color: #222;
-    background: #fff;
-    margin: 0;
-}
-
-nav {
-    display: flex;
-    background-color: darkgoldenrod;
-    padding: 1rem;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-nav a {
-    display: block;
-    color: white;
-    padding: 0.5rem;
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: 700;
-}
-
-h1 {
-    color: darkgoldenrod;
-    border-bottom: 2px solid darkgoldenrod;
-    padding-bottom: 10px;
-}
-
-img {
-    width: var(--largura-imagem);
-    height: auto;
-    border: 1px solid var(--cor-borda);
-    padding: 2px;
-    box-shadow: 0 0 30px var(--cor-sombra);
-}
-
-p {
-    padding: 0;
-}
-
-main {
-    grid-column: 2/3;
-    margin: 1rem;
-}
-
-main img {
-    margin-left: 20px;
-    margin-bottom: 20px;
-    width: var(--largura-imagem);
-    height: auto;
-    border: 1px solid var(--cor-borda);
-    padding: 2px;
-    box-shadow: 0 0 30px var(--cor-sombra);
-    float: right;
-}
-
-aside {
-    width: 20rem;
+    line-height: 1.6;
     color: #333;
-    text-align: center;
-    position: relative;
-    grid-column: 1/2;
-    grid-row: 1/2;
-}
-
-aside img {
-    width: 200px;
-    height: auto;
-}
-
-aside h2 {
-    position: absolute;
-    top: 50px;
-    left: 120px;
-}
-
-footer {
-    margin-top: 30px;
-    border-top: 1px solid var(--cor-borda);
-    text-align: center;
-}
-
-/*Seletores de Classe*/
-
-.caixa {
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 1rem;
-    background-color: #eee;
-}
-
-.indentacao {
-    padding-left: 2rem;
+    background: #f9f9f9;
+    -webkit-font-smoothing: antialiased;
 }
 
 header,
 footer {
     max-width: 840px;
     margin: auto;
+    background-color: #fff;
+}
+
+nav {
+    display: flex;
+    background-color: var(--cor-primaria);
+    padding: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0 2px 5px var(--cor-sombra);
+}
+
+nav a {
+    display: block;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+/* Títulos */
+h1 {
+    color: var(--cor-primaria);
+    border-bottom: 2px solid var(--cor-primaria);
+    padding-bottom: 10px;
+    margin-bottom: 1rem;
+}
+
+img {
+    width: var(--largura-imagem);
+    height: auto;
+    border: 1px solid var(--cor-borda);
+    padding: 4px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px var(--cor-sombra);
+    border-radius: 6px;
+}
+
+main {
+    margin: 1rem;
+}
+
+main img {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    float: right;
+}
+
+aside {
+    width: 100%;
+    color: #333;
+    text-align: center;
+}
+
+aside img {
+    width: 100%;
+    max-width: 200px;
+    margin-top: 10px;
+}
+
+aside h2 {
+    margin-bottom: 0.5rem;
+    color: var(--cor-primaria);
+}
+
+footer {
+    margin-top: 30px;
+    padding: 1.5rem 0;
+    border-top: 1px solid var(--cor-borda);
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.caixa {
+    margin: 1rem 0;
+    border: 1px solid var(--cor-borda);
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.indentacao {
+    padding-left: 1rem;
 }
 
 .grid {
     display: grid;
-    align-items: center;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    max-width: 840px;
+    margin: 2rem auto;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px var(--cor-sombra);
+    align-items: start;
+}
+
+.caixa ul,
+.caixa ol {
+    padding-left: 2rem;
+}
+
+.caixa li {
+    margin-bottom: 0.5rem;
 }
