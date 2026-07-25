@@ -1,8 +1,8 @@
 :root {
-    --cor-primaria: #CC5500;
+    --cor-primaria: #A84400;
     --cor-secundaria: #F4E4BC;
-    --cor-destaque1: #4B3621;
-    --cor-destaque2: #8A9A5B;
+    --cor-destaque1: #362516;
+    --cor-destaque2: #5E6D3B;
     --fonte-titulo: "Times New Roman", "Georgia", serif;
     --fonte-body: Arial, Helvetica, sans-serif;
 }
@@ -29,7 +29,7 @@ footer {
 
 header {
     background-color: var(--cor-primaria);
-    color: var(--cor-destaque2);
+    color: #fff;
     padding: 15px 20px;
     display: grid;
     grid-template-columns: auto 1fr;
