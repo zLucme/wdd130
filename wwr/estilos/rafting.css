@@ -354,3 +354,13 @@ footer a,
     color: var(--cor-destaque1);
     font-weight: bold;
 }
+
+.formulario-box fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mapa-box iframe {
+    border: 0;
+}
