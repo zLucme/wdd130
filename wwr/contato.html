@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco | Rafting Amidst Nature (RAN)</title>
+    <link rel="stylesheet" href="estilos/rafting.css">
+    <meta name="description"
+      content="Entre em contato com a Rafting Amidst Nature (RAN). Veja nossa localização no mapa, tire dúvidas sobre reservas e fale com nossa equipe.">
+    <meta name="author" content="Lucas Mendes de Araújo">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="imagens/z-boat.png" alt="logo" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="passeios.html">Passeios</a></li>
+                <li><a href="contato.html">Fale Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="empresa-info">
+            <h1>Rafting Amidst Nature (RAN)</h1>
+            <p>Parque Nacional Iguaçu - BR 469, km 25</p>
+            <p>Foz do Iguaçu, Paraná</p>
+            <p>+55 99 99999-9999</p>
+            <p>contato@raftingamidstnature.com</p>
+        </section>
+
+        <section class="contato-container">
+            <div class="mapa-box">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.3343727068122!2d-53.82035902545331!3d-25.460507977542353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f14d6db34e243d%3A0x6e633cd35854aa8f!2sParque%20Nacional%20Igua%C3%A7u!5e0!3m2!1spt-BR!2sbr!4v1785623846127!5m2!1spt-BR!2sbr"
+                  width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  title="Localização do Parque Nacional Iguaçu">
+                </iframe>
+            </div>
+
+            <div class="formulario-box">
+                <form action="#" method="POST">
+                    <fieldset style="border: none; padding: 0; margin: 0;">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite aqui" required>
+
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="Digite aqui"
+                          required>
+
+                        <label>Propósito da Mensagem</label>
+                        <div class="radio-grupo">
+                            <label><input type="radio" name="proposito" value="duvida" checked>
+                                Dúvida Geral</label>
+                            <label><input type="radio" name="proposito" value="reserva"> Pergunta
+                                sobre Reserva</label>
+                            <label><input type="radio" name="proposito" value="sugestao">
+                                Sugestão</label>
+                        </div>
+
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="4" placeholder="Digite aqui"
+                          required></textarea>
+
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="newsletter" value="sim"> Por favor, me
+                            inscreva na newsletter mensal
+                        </label>
+
+                        <button type="submit">Entrar em Contato!</button>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+
+        <section class="funcionarios">
+            <h2>Estamos Aqui para Serví-lo</h2>
+            <div class="cards-funcionarios">
+                <figure>
+                    <img src="imagens/funcionario1.jpg" alt="Guia Chefe de Corredeiras">
+                    <figcaption>Guia Chefe de Corredeiras</figcaption>
+                </figure>
+                <figure>
+                    <img src="imagens/funcionario2.jpg" alt="Gerente de Atendimento e Reservas">
+                    <figcaption>Gerente de Atendimento e Reservas</figcaption>
+                </figure>
+                <figure>
+                    <img src="imagens/funcionario3.jpg" alt="Instrutor de Segurança Aquática">
+                    <figcaption>Instrutor de Segurança Aquática</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy;2026 Aventura Rafting | Lucas Mendes de Araújo</p>
+            <nav class="redes-sociais socialmedia">
+                <a href="https://facebook.com">
+                    <img src="imagens/facebook-square.svg" alt="Ícone do Facebook">
+                </a>
+                <a href="https://linkedin.com">
+                    <img src="imagens/linkedin-square.svg" alt="Ícone do LinkedIn">
+                </a>
+                <a href="https://instagram.com">
+                    <img src="imagens/instagram-square.svg" alt="Ícone do Instagram">
+                </a>
+            </nav>
+        </div>
+    </footer>
+</body>
+
+</html>
