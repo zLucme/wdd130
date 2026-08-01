@@ -228,6 +228,11 @@ footer a,
     margin-bottom: 20px;
 }
 
+.contato-container h2 {
+    grid-column: 1 / -1;
+    margin: 0 0 10px 0;
+}
+
 .mapa-box {
     border: 1px solid #ccc;
     padding: 10px;
