@@ -101,17 +101,45 @@ h2 {
     left: 20px;
     right: 20px;
     background-color: var(--cor-secundaria);
-    padding: 20px 30px;
+    padding: 25px 30px;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    align-items: center;
     justify-content: center;
     gap: 15px;
+    border-radius: 4px;
 }
 
-.hero article img {
+.hero-cta p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--cor-destaque1);
+    margin: 0;
+}
+
+.hero-content-sobre {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--cor-secundaria);
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.hero-content-sobre img {
     width: 150px;
     height: auto;
+}
+
+.hero-content-sobre p {
+    text-align: justify;
+    font-size: 0.95rem;
+    color: var(--cor-destaque1);
+    margin: 0;
 }
 
 .historia {
@@ -354,21 +382,6 @@ footer a,
     font-size: 0.85rem;
     color: var(--cor-destaque1);
     font-weight: bold;
-}
-
-.hero-cta {
-    background-color: var(--cor-secundaria);
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    gap: 15px;
-}
-
-.hero-cta p {
-    font-size: 1.1rem;
-    font-weight: bold;
-    color: var(--cor-destaque1);
-    margin: 0;
 }
 
 .botao-acao {
