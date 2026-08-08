@@ -353,3 +353,148 @@ footer a,
     color: var(--cor-destaque1);
     font-weight: bold;
 }
+
+.hero-cta {
+    background-color: var(--cor-secundaria);
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.hero-cta p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--cor-destaque1);
+    margin: 0;
+}
+
+.botao-acao {
+    background-color: var(--cor-primaria);
+    color: #fff;
+    padding: 10px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    display: inline-block;
+    transition: opacity 0.2s ease;
+}
+
+.botao-acao:hover {
+    opacity: 0.9;
+}
+
+.botao-destaque {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-destaque1);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.botao-destaque:hover {
+    opacity: 0.9;
+}
+
+.legenda-bold {
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.destaque-bg {
+    background-color: var(--cor-secundaria);
+}
+
+.relative-grid {
+    position: relative;
+}
+
+.destaque-texto {
+    grid-column: 2 / 4;
+    background-color: rgba(94, 109, 59, 0.9);
+    color: #fff;
+    padding: 25px;
+    border-radius: 4px;
+}
+
+.destaque-texto h2 {
+    color: #fff;
+    margin-bottom: 10px;
+    text-align: left;
+    font-family: var(--fonte-body);
+    font-size: 1.3rem;
+}
+
+.destaque-texto p {
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.newsletter-box {
+    margin-bottom: 20px;
+}
+
+.link-cta {
+    color: var(--cor-primaria);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.bg-branco {
+    background-color: #fff;
+}
+
+.tabela-responsiva {
+    overflow-x: auto;
+}
+
+.tabela-passeios {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 0.95rem;
+}
+
+.tabela-passeios th,
+.tabela-passeios td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.tabela-passeios thead tr {
+    background-color: var(--cor-primaria);
+    color: #fff;
+    text-align: left;
+}
+
+.tabela-passeios tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.texto-centro {
+    text-align: center;
+}
+
+.texto-negrito {
+    font-weight: bold;
+}
+
+.empresa-info.cta-passeios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.empresa-info.cta-passeios h2,
+.empresa-info.cta-passeios p {
+    margin: 0;
+}
+
+.empresa-info.cta-passeios .botao-acao {
+    margin-top: 5px;
+}
